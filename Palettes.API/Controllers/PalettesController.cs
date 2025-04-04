@@ -70,5 +70,26 @@ namespace PalettesAPI.API.Controllers
             return palette;
         }
 
+        [HttpGet("{id}/css")]
+        public async Task<ActionResult> GetPaletteCss(int id)
+        {
+            var palette = await _repository.GetByIdAsync(id);
+            if(palette == null)
+                return NotFound();
+
+            var css = $@"
+--base-clr: {palette.BaseClr};
+--section-clr: {palette.SectionClr};
+--text-clr: {palette.TextClr};
+--secondary-text-clr: {palette.SecondaryTextClr};
+--accent-clr: {palette.AccentClr};
+--line-clr: {palette.LineClr};
+--hover-clr: {palette.HoverClr};
+--shadow-clr: {palette.ShadowClr};";
+
+            return Content(css.Trim(), "text/plain");
+        }
+
+
     }
 }

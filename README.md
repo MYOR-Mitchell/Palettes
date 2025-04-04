@@ -1,11 +1,8 @@
-# 🎨 Palette API
+# 🎨 Palettes
 
 A backend service that lets you store, retrieve, and manage UI color palettes.  
 Built with ASP.NET Core and PostgreSQL.
 
----
-
-<br>
 
 ## ✨ Features
 

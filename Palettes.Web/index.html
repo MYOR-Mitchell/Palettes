@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palettes</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>     
+    <div class="content-wrapper">
+        <header>
+            <h1>Palette Generator</h1>
+            <h2>Generate color palettes for quick use or test your own.</h2>
+        </header>
+
+        <main>
+            <div class="color-wrapper">
+                <div class="color-container">
+                    <p>Base</p>
+                    <div>
+                        <input type="color" value="#1e1e1e">
+                        <input type="text" value="#1e1e1e" color-var="BaseClr">
+                    </div>
+
+                    <p>Section</p>
+                    <div>
+                        <input type="color" value="#2a2a2a">
+                        <input type="text" value="#2a2a2a" color-var="SectionClr">
+                    </div>
+
+                    <p>Text</p>
+                    <div>
+                        <input type="color" value="#ffffff">
+                        <input type="text" value="#ffffff" color-var="TextClr">
+                    </div>
+
+                    <p>Secondary Text</p>
+                    <div>
+                        <input type="color" value="#b0b0b0">
+                        <input type="text" value="#b0b0b0" color-var="SecondaryTextClr">
+                    </div>
+                </div>
+            </div>
+
+            <div class="color-wrapper">
+                <div class="color-container">
+                    <p>Accent</p>
+                    <div>
+                        <input type="color" value="#4aa3df">
+                        <input type="text" value="#4aa3df" color-var="AccentClr">
+                    </div>
+
+                    <p>Line</p>
+                    <div>
+                        <input type="color" value="#474747">
+                        <input type="text" value="#474747" color-var="LineClr">
+                    </div>
+
+                    <p>Hover</p>
+                    <div>
+                        <input type="color" value="#333333">
+                        <input type="text" value="#333333" color-var="HoverClr">
+                    </div>
+
+                    <p>Shadow</p>
+                    <div>
+                        <input type="color" value="#d0d0d0">
+                        <input type="text" value="#d0d0d0" color-var="ShadowClr">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="palette-id">
+            <p>Palette ID: </p>
+            <input type="text" placeholder="Default" id="id">
+            <button type="button" id="searchBtn">Search</button>
+        </div>
+
+        <div class="buttons">
+            <ul>
+                <li>
+                    <button id="randomBtn">Random</button>
+                </li>
+                <li>
+                    <button id="resetBtn">Reset</button>
+                </li>
+                <li>
+                    <button id="copyBtn">Copy</button>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button id="saveBtn">Save</button>
+                </li>
+                <li>
+                    <button id="addBtn">Add</button>
+                </li>
+                <li>
+                    <button id="deleteBtn">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

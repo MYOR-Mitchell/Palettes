@@ -141,3 +141,11 @@ env/
 *.orig
 
 appsettings.Development.json
+.cache/
+dist/
+build/
+# Docker related files
+.docker/
+docker-compose.override.yml
+Dockerfile
+*.dockerignore

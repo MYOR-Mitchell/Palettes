@@ -1,0 +1,105 @@
+.palettesWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+  }
+  
+  .colorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+    margin: 0 auto;
+  }
+  
+  .color {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 5em;
+  }
+  
+  .color p {
+    margin-right: 0.5em;
+  }
+  
+  input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+  }
+  
+  input[type="color"] {
+    cursor: pointer;
+    margin-right: 0.5em;
+  }
+  
+  input[type="text"] {
+    background: var(--section-clr);
+    color: var(--text-clr);
+    border: 1px solid var(--line-clr);
+    border-radius: 0.3em;
+    padding-left: 0.5em;
+  }
+  
+  .buttons {
+    margin-top: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+  
+  .buttons ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .buttons li button {
+    all: unset;
+    background: var(--base-clr);
+    border: 1px solid var(--line-clr);
+    border-radius: 0.5em;
+    margin: 0 0.5em;
+    width: 8em;
+    padding: 1em 0;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .buttons li button:hover,
+  .loadButton:hover {
+    background: var(--hover-clr);
+    box-shadow: 0 0 0.2em var(--shadow-clr);
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+    text-decoration-color: var(--accent-clr);
+  }
+  
+  .loadSection {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .loadSection input {
+    width: 12em;
+    padding: 0.5em;
+    text-align: center;
+  }
+  
+  .loadButton {
+    all: unset;
+    background: var(--base-clr);
+    border: 1px solid var(--line-clr);
+    border-radius: 0.5em;
+    padding: 0.75em 1em;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+  }
+  

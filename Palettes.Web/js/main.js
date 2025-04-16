@@ -244,3 +244,9 @@ document.getElementById("deleteBtn").addEventListener("click", async () => {
         console.error(error);
     }
 });
+
+// Wake server up
+window.addEventListener("load", () => {
+    fetch("https://palettes-api.onrender.com/api/palettes/ping").catch(() => {});
+  });
+  

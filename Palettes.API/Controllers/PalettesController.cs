@@ -70,6 +70,12 @@ namespace PalettesAPI.API.Controllers
             return palette;
         }
 
+        [HttpGet("ping")]
+        public IActionResult Ping()
+        {
+            return Ok("pong");
+        }
+
         [HttpGet("{id}/css")]
         public async Task<ActionResult> GetPaletteCss(int id)
         {
@@ -89,7 +95,5 @@ namespace PalettesAPI.API.Controllers
 
             return Content(css.Trim(), "text/plain");
         }
-
-
     }
 }

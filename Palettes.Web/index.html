@@ -9,11 +9,11 @@
     <script src="js/main.js" defer></script>
 </head>
 
-<body>     
+<body>
     <div class="content-wrapper">
         <header>
-            <h1>Palette Generator</h1>
-            <h2>Generate color palettes for quick use or test your own.</h2>
+            <h1>Palettes</h1>
+            <h2>Find, build, and preview custom color themes for any page.</h2>
         </header>
 
         <main>
@@ -43,9 +43,7 @@
                         <input type="text" value="#b0b0b0" color-var="SecondaryTextClr">
                     </div>
                 </div>
-            </div>
 
-            <div class="color-wrapper">
                 <div class="color-container">
                     <p>Accent</p>
                     <div>
@@ -74,35 +72,39 @@
             </div>
         </main>
 
-        <div class="palette-id">
-            <p>Palette ID: </p>
-            <input type="text" placeholder="Default" id="id">
-            <button type="button" id="searchBtn">Search</button>
-        </div>
+        <div class="controls-wrapper">
+            <div class="palette-id">
+                <div class="id">
+                    <p>Palette ID: </p>
+                    <input type="text" placeholder="Default" id="id">
+                </div>
+                <button type="button" id="searchBtn">Search</button>
+            </div>
 
-        <div class="buttons">
-            <ul>
-                <li>
-                    <button id="randomBtn">Random</button>
-                </li>
-                <li>
-                    <button id="resetBtn">Reset</button>
-                </li>
-                <li>
-                    <button id="copyBtn">Copy</button>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <button id="saveBtn">Save</button>
-                </li>
-                <li>
-                    <button id="addBtn">Add</button>
-                </li>
-                <li>
-                    <button id="deleteBtn">Delete</button>
-                </li>
-            </ul>
+            <div class="buttons">
+                <ul>
+                    <li>
+                        <button id="randomBtn">Random</button>
+                    </li>
+                    <li>
+                        <button id="resetBtn">Reset</button>
+                    </li>
+                    <li>
+                        <button id="copyBtn">Copy</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <button id="saveBtn">Save</button>
+                    </li>
+                    <li>
+                        <button id="addBtn">Add</button>
+                    </li>
+                    <li>
+                        <button id="deleteBtn">Delete</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 

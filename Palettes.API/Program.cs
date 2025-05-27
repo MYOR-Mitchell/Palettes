@@ -37,7 +37,6 @@ using(var scope = app.Services.CreateScope())
     await PaletteSeeder.SeedAsync(context);
 }
 
-
 if(app.Environment.IsDevelopment())
 {
     app.UseSwagger();
